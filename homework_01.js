@@ -161,7 +161,7 @@ console.log("Risultato ricorsivo: " + ex_7_R(e,f));
 
 
 //Esercizio8
-console.log(Ottavo esercizio");
+console.log("Ottavo esercizio");
 function matriceI(n){
    a=[];
    cont=0;
@@ -248,20 +248,20 @@ function riordinaI(myarray){
 disp=[];
 par=[];
 function riordinaR(myarray){
-    if((myarray.length==0)
+    if(myarray.length==0)
     {
         out= disp.concat(par);
         return out;
     }
-    else if((myarray[0]%2==0)
+    else if(myarray[0]%2==0)
     {
-        par.push((myarray[0]);
-        return ordina((myarray.slice(1));
+        par.push(myarray[0]);
+        return riordinaR(myarray.slice(1));
     }
-    else if((myarray[0]%2!=0)
+    else if(myarray[0]%2!=0)
     {
-        disp.push((myarray[0]);
-        return ordina((myarray.slice(1));
+        disp.push(myarray[0]);
+        return riordinaR(myarray.slice(1));
     };
 }
 function ex_11_R(myarray){
